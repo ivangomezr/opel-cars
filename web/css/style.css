@@ -1,0 +1,67 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body > .container {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+body > .container > .row {
+    flex: 1 0 auto;
+    align-content: flex-start;
+}
+
+body > .container > footer {
+    margin-top: auto;
+}
+
+.row > div > button {
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    text-align: left;
+    cursor: pointer;
+}
+
+.row > div > button:focus {
+    outline: none;
+}
+
+.row > div {
+    margin-bottom: 1.5rem;
+}
+
+.row .card {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.row .card .card-body {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.row .card .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 0 .75rem .75rem;
+}
+
+.row .card {
+    transition: box-shadow .25s ease, transform .25s ease;
+}
+
+.row .card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    transform: translateY(-4px);
+}
